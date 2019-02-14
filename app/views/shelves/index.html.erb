@@ -1,0 +1,5 @@
+<% @shelves.each do |shelf| %>
+  <%= link_to shelf.name, shelf_path(shelf) %>
+<% end %>
+
+<%= link_to 'logout', destroy_user_session_path, method: :delete %>
