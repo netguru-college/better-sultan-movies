@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ShelfPolicy < ApplicationPolicy
   def index?
     record.user == user
@@ -31,5 +33,4 @@ class ShelfPolicy < ApplicationPolicy
       scope.where(user_id: user.id)
     end
   end
-
 end
